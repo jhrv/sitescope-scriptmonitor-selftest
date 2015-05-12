@@ -1,0 +1,27 @@
+{
+    "application": "gosys",
+    "version": "6.2.3",
+    "timestamp": "2015-05-04T10:34:29.103Z",
+    "aggregate_result": 1,
+    "checks": [
+      {
+        "endpoint": "d26dbfl006.test.local:1521/unav05",
+        "description": "Sjekk av kobling mot egen database",
+        "result": 0
+      },
+      {
+        "endpoint": "https://service-gw-q8.preprod.local/tjeneste/virksomhet/Person_v2",
+        "description": "Ping av TPSs hentperson-tjeneste",
+        "errorMessage": "error msg from tps hent person",
+        "result": 1,
+        "responseTime": "58ms"
+      },
+      {
+        "endpoint": "QA.T411_TPS_REQUEST_QUEUE @ MRT1 (155.55.1.82:1412)",
+        "description": "Verifikasjon av TPSs request-kø eksisterer",
+        "errorMessage": "this is a errormessage from a queue check",
+        "result": 1,
+        "responseTime": "69ms"
+      }
+    ]
+}
