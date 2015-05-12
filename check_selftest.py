@@ -4,7 +4,7 @@ import sys
 
 def main():
     if len(sys.argv) <= 1:
-        raise Exception("No URL to selftest provided. Run script like this 'python check_selftest.py <url to selftest>")
+        raise Exception("No URL to selftest provided. Run script like this: 'python check_selftest.py <url to selftest>'")
     selftest_url = sys.argv[1]
     perform_selftest(selftest_url)
 
